@@ -226,9 +226,34 @@
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close><svg class="modal-close-icon"><use href="./images1/symbol-defs (1).svg#icon-close-black-18dp-2-1"></use></svg>
             </button>
-            <form action="">
-                <label for="name">шмя</label>
-                <input type="text" name="name" id="name">
+          
+            <form class="modal-form">
+                <p class="modal-caption">Оставьте свои данные, мы вам перезвоним</p>
+               
+               
+                <div class="form-item">
+            <label class="modal-label" for="user-name">Имя</label>
+            <input name="user-name" type="text" id="user-name" class="modal-input"><svg class="form-icon">
+                <use href="./images1/symbol-defs (1).svg#icon-Vector-4"></use>
+            </svg>
+                 </div>
+                <div class="form-item">
+            <label class="modal-label" for="user-tel">Телефон</label>
+            <input name="user-tel" type="tel" id="user-tel" class="modal-input"><svg class="form-icon">
+                <use href="./images1/symbol-defs (1).svg#icon-Vector-3"></use>
+            </svg>
+                 </div>
+                 <div class="form-item">
+                  <label class="modal-label" for="user-email">Почта</label>
+                  <input name="user-email" type="email" id="user-email" class="modal-input"><svg class="form-icon">
+                    <use href="./images1/symbol-defs (1).svg#icon-Vector-2"></use>
+                </svg>
+                 </div>
+            <div class="form-item">
+            <label class="modal-label" for="user-text">Комментарий</label>
+            <textarea class="modal-text" name="user-text" id="user-text" placeholder="Введите текст"></textarea>
+            </div>
+            <button type="submit" class="modal-button">Отправить</button>
             </form>
         </div>
     </div>
