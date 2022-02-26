@@ -547,6 +547,15 @@ margin-left: 0;
 .footer-social.list .social-item+.social-item{
     margin-left: 10px;
 }
+.footer-form-text{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #ffffff;
+}
 .example-caption {
   position: absolute;
   width: 1px;
@@ -745,8 +754,9 @@ fill: #000000;
     padding-right: 12px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    outline-color: var(--accent-color);
+   outline-color: var(--accent-color);        
 }
+
 .modal-caption{
 font-weight: 700;
 font-size: 20px;
@@ -780,6 +790,7 @@ letter-spacing: 0.01em;
 margin-bottom: 4px;
 
 color: var(--primary-text-color);
+
 }
 
 .modal-text{
@@ -790,6 +801,7 @@ color: var(--primary-text-color);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline-color: var(--accent-color);
+    
 }
 .modal-text::placeholder{
 font-size: 12px;
@@ -799,19 +811,28 @@ letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
 }
 .modal-input:focus-visible+.form-icon{
-    fill:var(--accent-color)
+    fill:var(--accent-color);
+   
+    
 }
+
 .form-item{
     position: relative;
-
+    
+    
     margin-bottom: 10px;
+    
+
+
 }
-.form-icon{
+.form-icon{  
     position: absolute;
     left: 12px;
     top: 50%;
     width:18px;
     height:18px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .form-item.text{
     margin-bottom: 20px;
@@ -821,12 +842,20 @@ color: rgba(117, 117, 117, 0.5);
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+     
 }
 .checkbox-icon{
 margin-right: 8px;
     display: block;
    width: 16px;
    height: 15px;
+   border: 2px solid #212121;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 2px;
+fill: transparent;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
    
 }
 .checkbox-text{
@@ -845,7 +874,11 @@ text-decoration: underline;
 
 color:var(--accent-color);
 }
-
+.checkbox-input:checked~ .checkbox>.checkbox-icon{
+    fill: #ffffff;
+    background-color:var(--accent-color);
+    border: none;
+}
 
 .checkbox-input{
     position: absolute;
